@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Management</title>
+    <link rel="stylesheet" href="/pages/page1/assets/css/style.css">
+</head>
+<body>
+    <div class="gradeContainer">
+        <h2>Grade Management</h2>
+        <form id ="gradeForm">
+            <input type="text" id="name" placeholder="Student's Name" required>
+            <input type="number" id="grade1" placeholder="Grade 1" required>
+            <input type="number" id="grade2" placeholder="Grade 2" required>
+            <input type="number" id="grade3" placeholder="Grade 3" required>
+            <input type="number" id="grade4" placeholder="Grade 4" required>
+            <input type="number" id="grade5" placeholder="Grade 5" required>
+            <button type="submit">Calculate GWA</button>
+        </form>
+        <h3 id ="result"></h3>
+        <table id="gradeTable"></table>
+        <button id="logoutButton">Logout</button>
+        <script src="/pages/page1/assets/js/scripts.js"></script>
+    </div>
+</body>
+</html>
+
+<!-- This is where the student will input their grades to calculate their GWA. -->

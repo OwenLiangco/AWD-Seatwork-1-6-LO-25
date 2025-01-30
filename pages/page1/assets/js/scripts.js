@@ -10,6 +10,7 @@ document.getElementById("gradeForm")?.addEventListener("submit", function(event)
     document.getElementById("result").innerText= "GWA: " + gwa.toFixed(2); //this is where the computation after they input their 5 Grades.
 
 
+
 let table = document.getElementById("gradeTable"); //then it will display it inside a table.
 table.innerHTML = `
                 <tr>

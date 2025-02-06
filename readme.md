@@ -5,27 +5,24 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/BluuCloud.png" alt="BluuCloud" width="130" height="150">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Seatwork 1: Problem Set 6 - Grade Management -</h3>
+
+  <h3 align = "center">Seatwork 1: Problem Set 6 - Grade Management -</h3>
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
+
 ![](https://visit-counter.vercel.app/counter.png?page=OwenLiangco/AWD-Seatwork-1-6-LO-25)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/badge/user/560aac68-1590-4066-a9a0-d2f81918e124/project/910a5b41-171a-44fc-9c84-683f9b6e7332.svg)](https://wakatime.com/badge/user/560aac68-1590-4066-a9a0-d2f81918e124/project/910a5b41-171a-44fc-9c84-683f9b6e7332)
 
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -53,25 +50,35 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
 Description of the project in details.
 
+A 2-Page Website, with a grading system in the second page; While the first page serves as a login.
+
+
 Guiding Question:
-- What is the project
+- What is the project?
+
+The project is to make a website using HTML, CSS, and JavaScript. In this project I made a 2 page website, first serves as a login confirmation for the user, and the second page is for the user to input 5 grades and 5 units to be computed into GWA.
 - Whats the purpose
+
+The purpose of this project is to impliment our knowledge of Web Design into different situations and scenarios.
+
 - What are key components
+
+The key components used in this project is the fundamentals of HTML and JavaScripting.
+
 - What technology used and how it is used
 
+The technology used for this project is made in Visual Code, a virtual programming application.
+
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+
+- MultiPage Website
+- Basic Input and Ouput Statements
+- Mathematical expressions
 
 ### Technology
-<!-- TODO: List of Technology Used -->
+
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
@@ -112,7 +119,7 @@ WD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
+
 | Title | Purpose | Link |
 |-|-|-|
 | Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |

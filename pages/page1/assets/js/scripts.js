@@ -56,5 +56,5 @@ table.innerHTML = `
 document.getElementById("logoutButton")?.addEventListener("click", function() //they will be sent back to the login page.
 {
     localStorage.removeItem("studentEmail");
-    window.location.href = "/loginPage.html";
+    window.location.href = "/index.html";
 });

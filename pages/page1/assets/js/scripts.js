@@ -2,14 +2,24 @@ document.getElementById("gradeForm")?.addEventListener("submit", function(event)
 {
     event.preventDefault();
     let grades = [];
+    let units = [];
+    let totalWeightedGrade = 0;
+    let totalUnits = 0;
+
     for (let i = 1; i <= 5; i++)
     {
-        grades.push(parseFloat(document.getElementById(`grade${i}`).value));
+        let grade = parseFloat(document.getElementById(`grade${i}`).value);
+        let unit = parseFloat(document.getElementById(`unit${i}`).value);
+
+        grades.push(grade);
+        units.push(unit);
+
+        totalWeightedGrade += grade * unit;
+        totalUnits += unit;
     }
-    let gwa = grades.reduce((a, b) => a + b, 0) / grades.length;
-    document.getElementById("result").innerText= "GWA: " + gwa.toFixed(2); //this is where the computation after they input their 5 Grades.
 
-
+    let gwa = totalWeightedGrade / totalUnits;
+    document.getElementById("result").innerText = "GWA: " + gwa.toFixed(2);
 
 let table = document.getElementById("gradeTable"); //then it will display it inside a table.
 table.innerHTML = `
@@ -19,6 +29,11 @@ table.innerHTML = `
                 <th>Grade 3</th>
                 <th>Grade 4</th>
                 <th>Grade 5</th>
+                <th>Unit 1</th>
+                <th>Unit 2</th>
+                <th>Unit 3</th>
+                <th>Unit 4</th>
+                <th>Unit 5</th>
                 <th>GWA</th>
                 </tr>
                 <tr>
@@ -27,6 +42,11 @@ table.innerHTML = `
                 <td>${grades[2]}</td>
                 <td>${grades[3]}</td>
                 <td>${grades[4]}</td>
+                <td>${units[0]}</td>
+                <td>${units[1]}</td>
+                <td>${units[2]}</td>
+                <td>${units[3]}</td>
+                <td>${units[4]}</td>
                 <td>${gwa.toFixed(2)}</td>
                 </tr>
 
@@ -36,5 +56,5 @@ table.innerHTML = `
 document.getElementById("logoutButton")?.addEventListener("click", function() //they will be sent back to the login page.
 {
     localStorage.removeItem("studentEmail");
-    window.location.href = "/index.html";
+    window.location.href = "/loginPage.html";
 });

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else {
                 localStorage.setItem("loggedIn", "true");
-                window.location.href = "/pages/page1/index.html";
+                window.location.href = "./pages/page1/index.html";
             }
         });
     }

@@ -19,30 +19,23 @@ document.getElementById("gradeForm")?.addEventListener("submit", function (event
 
     let gwa = totalWeightedGrade / totalUnits;
     let studentName = document.getElementById("name").value.trim();
-    // Create an entry object
-    let entry = {  name, grades, units, gwa: gwa.toFixed(2) };
+    let entry = { grades, units, gwa: gwa.toFixed(2) };
 
-    // Retrieve existing records from localStorage
     let records = JSON.parse(localStorage.getItem("gradeRecords")) || [];
 
-    // Add new entry
     records.push(entry);
 
-    // Save back to localStorage
     localStorage.setItem("gradeRecords", JSON.stringify(records));
 
-    // Update the table
     displayRecords();
 });
 
-// Function to display records from localStorage
 function displayRecords() {
     let records = JSON.parse(localStorage.getItem("gradeRecords")) || [];
     let table = document.getElementById("gradeTable");
     
     table.innerHTML = `
         <tr>
-            <th>Name</th>
             <th>Grade 1</th>
             <th>Grade 2</th>
             <th>Grade 3</th>
@@ -60,7 +53,6 @@ function displayRecords() {
     records.forEach(record => {
         table.innerHTML += `
             <tr>
-                <td>${record.name}</td>
                 <td>${record.grades[0]}</td>
                 <td>${record.grades[1]}</td>
                 <td>${record.grades[2]}</td>
@@ -83,7 +75,7 @@ function clearRecords() {
     localStorage.removeItem("gradeRecords");
     displayRecords();
 }
-document.getElementById("logoutButton")?.addEventListener("click", function() //they will be sent back to the login page.
+document.getElementById("logoutButton")?.addEventListener("click", function()
 {
     localStorage.removeItem("studentEmail");
 });
